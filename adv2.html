@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 50rem;
+        margin: 0 5rem;
+        text-align: justify;
+        line-height: 1.6;
+        margin-top: 1rem;
+      }
+      .slide-container {
+        height: 65rem;
+        width: 65rem;
+        margin: 0 5rem;
+      } */
+      .carousel-item {
+        height: 30rem;
+        border: 2px solid #808080;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        background-color: #808080;
+        border-radius: 50%;
+        top: calc(50% - 25px);
+      }
+      .carousel-control-prev {
+        left: 1%;
+      }
+      .carousel-control-next {
+        right: 1%;
+      }
+   
+/* .carousel-indicators button{
+  background-color:black;
+} */
+      .carousel-indicators .active {
+        background-color: #808080;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="collapse bg-secondary" id="navbarHeader">
+          <div class="container-lg">
+              <div class="row">
+                <div class="col-lg-10 col-md-10 pt-4 mx-auto">
+                <p class="text-white">We have the solution and service ready. For Demo Please contact</p>
+              </div>
+              <div class="col-lg-10 col-md-10 mx-auto">
+                <h4 class="text-white">Contact Details</h4>
+              </div>
+              </div>
+              </div>
+            </div>
+        <div class="navbar navbar-dark bg-secondary shadow-sm">
+          <div class="container-lg">
+            <div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            </div>
+          </div>
+      </header>
+      <section class="py-5 container-lg">
+          <div class="col-lg-10 col-md-10 mx-auto">
+          <p class="lead">The Unique Identification Authority of India (UIDAI), under the Aadhaar
+                Act and Regulations, 2016, has made it compulsory for the centralized
+                storage (collected by AUAs/KUAs/ Sub-AUAs/ or any other agency) of all
+                the Aadhaar number in a different repository known as ‘Aadhaar Data
+                Vault’.</p>
+            <p class="lead">Aadhaar data vault (ADV) developed by C-DAC is a REST API-based
+                solution/service for storing encrypted Aadhaar numbers against the
+                reference numbers. Keys used to encrypt/decrypt the Aadhaar numbers are
+                stored in the HSM as mandated by UIDAI. ADV exposes functionality
+                through REST API and can be used standalone or seamlessly integrated
+                with the existing set-up of the AUA-KUA. ADV can be utilized to achieve
+                the encryption of the Aadhaar number, getting a service-wise reference
+                number or unique reference number across all services as per the
+                requirement of the client application. ADV provided as a solution or
+                service can be seamlessly integrated with the help of supporting
+                libraries provided by C-DAC. Additionally, utilities to run the batch
+                using a CSV (Application Specific ID, Reference Key/Aadhaar Number)
+                files for carrying out encryption and decryption of Aadhaar Numbers is
+                also a part of the solution/service.
+            </p>
+          </div>
+          <div class="col-lg-10 col-md-10 mx-auto py-3">
+            <div
+              id="myCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-interval="3000"
+            >
+              <div class="carousel-indicators">
+                <li
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="1"
+                ></li>
+                <li
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="2"
+                ></li>
+                <li
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide-to="3"
+                ></li>
+              </div>
+      
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./p1f8751l3a1pc413dp47qea9l8l4-3.png" alt="" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./p1f8751l3a1pc413dp47qea9l8l4-4.png" alt="" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./p1f8751l3a1pc413dp47qea9l8l4-5.png" alt="" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./p1f8751l3a1pc413dp47qea9l8l4-6.png" alt="" />
+                </div>
+              </div>
+      
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
